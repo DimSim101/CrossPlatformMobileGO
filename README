@@ -1,0 +1,14 @@
+# Cross Platform Build Guide:
+
+- Windows: GOOS=windows GOARCH=amd64 go build -o <appNameHere>.exe
+
+- Android: gomobile build -target=android -o <appNameHere>.apk
+
+Note: Command below must be run on OSX as XCode is required to create iOS apps.
+- iOS: gomobile build -target=ios -o <appNameHere>.app
+
+
+# Currently Non-working platforms: Linux / OSX desktop environment (untested)
+// THE COMMAND BELOW THROWS AN ERROR. NOT SURE HOW TO RUN ON LINUX. WILL FIGURE
+OUT LATER
+- Linux: GOOS=linux GOARCH=amd64 go build -o <appNameHere>
